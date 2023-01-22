@@ -6,11 +6,16 @@
 *{
     font-family: 'Press_Start_2P', Arial, sans-serif;;
 }
+header img{
+    height: 50px;
+    width: 50px;
+}
 nav{
     display: flex;
     justify-content: flex-end;
 
 }
+
 .tema{
     justify-content: flex-end;
     width: 20%;
@@ -30,9 +35,6 @@ input, textarea{
     width: 80%;
     height: 60%;
     margin: 0 auto;
-}
-tema{
-    width: 20%;
 }
 footer{
     display: flex;
