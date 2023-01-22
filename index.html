@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+     <meta charset = "UTF-8">
+     <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+     <link href="styles.css" rel="stylesheet">
+     <title> Cursos de Alura </title>
+</head>
+<body>
+     <header>
+          <nav class="nes-container with-title is-centered">
+               <img src="" alt="Logo de aulora">
+               <h2 class="title">Encriptador AULORA</h2>
+               <label for="default_select">Tema</label>
+               <div class="nes-select tema">
+                    <select required id="default_select">
+                         <option value="" disabled selected hidden></option>
+                         <option value="0">Claro</option>
+                         <option value="1">Obscuro</option>
+                    </select>
+               </div>    
+             </nav>
+     </header>
+     <main>
+          <div class="nes-container with-title part">
+               <p class="title">Container.is-dark</p>
+               <input type="text" class="nes-input" placeholder="Your text goes here" id="inputText">
+               <button type="button" class="nes-btn is-primary" onclick="encript()">Encriptar</button>
+               <button type="button" class="nes-btn is-disabled">Desencriptar</button>
+          </div>
+          <div class="nes-container with-title part">
+               <p class="title">Container.is-dark</p>
+               <textarea id="textarea_field" class="nes-textarea"  placeholder="Result"></textarea> 
+               <button type="button" class="nes-btn is-primary" onclick="copyText()">Copiar texto</button>
+          </div>
+
+     </main>
+     <footer>
+          <section class="icon-list">
+               <i class="nes-icon instagram is-large"></i>
+               <i class="nes-icon github is-large"></i>
+               <i class="nes-icon linkedin is-large"></i>
+             </section>      
+     </footer>
+     <script src="criptro.js"></script>
+     
+</body>
+</html>
