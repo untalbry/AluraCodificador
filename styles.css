@@ -136,14 +136,24 @@
         width: 50px;
         margin-right: 30px;
     }
+
     label{
         display: none;
     }
     .tema{
-        
+        padding: .7em .4em .7em .4em;
         justify-content: flex-end;
         width: 20%;
     }
+    #default_select{
+        padding: .5em .6em .5em .6em;
+
+    }
+    #opt{
+        display: none;
+    }
+
+ 
     /*main*/
     main{
         display: block;
