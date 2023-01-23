@@ -8,13 +8,13 @@
 </head>
 <body>
      <header>
-          <nav class="nes-container with-title is-centered">
-               <img src="" alt="Logo de aulora">
+          <nav class="nes-container">
+               <img src="img/logo.png" alt="Logo de aulora">
                <h2 class="title">Encriptador AULORA</h2>
                <label for="default_select">Tema</label>
                <div class="nes-select tema">
                     <select required id="default_select">
-                         <option value="" disabled selected hidden></option>
+                         <option id="opt" value="0" disabled selected hidden></option>
                          <option value="0">Claro</option>
                          <option value="1">Obscuro</option>
                     </select>
@@ -22,24 +22,29 @@
              </nav>
      </header>
      <main>
-          <div class="nes-container with-title part">
-               <p class="title">Container.is-dark</p>
+          <div class="nes-container with-title ">
+               <p class="title">Entrada</p>
                <input type="text" class="nes-input" placeholder="Your text goes here" id="inputText">
-               <button type="button" class="nes-btn is-primary" onclick="encript()">Encriptar</button>
-               <button type="button" class="nes-btn is-disabled">Desencriptar</button>
+               <div class="btn">
+                    <button type="button" class="nes-btn is-primary" onclick="encript()">Encriptar</button>
+                    <button type="button" class="nes-btn is-disabled">Desencriptar</button>
+               </div>
+               
           </div>
-          <div class="nes-container with-title part">
-               <p class="title">Container.is-dark</p>
+          <div class="nes-container with-title">
+               <p class="title">Salida</p>
                <textarea id="textarea_field" class="nes-textarea"  placeholder="Result"></textarea> 
-               <button type="button" class="nes-btn is-primary" onclick="copyText()">Copiar texto</button>
+               <div class="btn">
+                    <button type="button" class="nes-btn is-success" onclick="copyText()">Copiar texto</button>
+               </div>
           </div>
 
      </main>
      <footer>
-          <section class="icon-list">
-               <i class="nes-icon instagram is-large"></i>
-               <i class="nes-icon github is-large"></i>
-               <i class="nes-icon linkedin is-large"></i>
+          <section class="icon-list nes-container">
+               <a href="https://www.instagram.com/_bry.sr_/"><i class="nes-icon instagram is-large"></i></a>
+               <a href="https://github.com/xVrzBx/AluraCodificador"><i class="nes-icon github is-large"></i></a>
+               <a href="https://www.linkedin.com/in/bryan-castro-programador/"><i class="nes-icon linkedin is-large"></i></a>
              </section>      
      </footer>
      <script src="coder.js"></script>
