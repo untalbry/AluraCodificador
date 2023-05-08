@@ -10,24 +10,16 @@
      <header>
           <nav class="nes-container">
                <img src="img/logo.png" alt="Logo de aulora">
-               <h2 class="title">Encriptador AULORA</h2>
-               <label for="default_select">Tema</label>
-               <div class="nes-select tema">
-                    <select required id="default_select">
-                         <option id="opt" value="0" disabled selected hidden></option>
-                         <option value="0">Claro</option>
-                         <option value="1">Obscuro</option>
-                    </select>
-               </div>    
+               <h2 class="title">Encriptador ALURA</h2>  
              </nav>
      </header>
      <main>
           <div class="nes-container with-title ">
                <p class="title">Entrada</p>
-               <input type="text" class="nes-input" placeholder="Your text goes here" id="inputText">
+               <textarea type="text" class="nes-input" placeholder="Your text goes here" id="inputText"></textarea>
                <div class="btn">
                     <button type="button" class="nes-btn is-primary" onclick="encript()">Encriptar</button>
-                    <button type="button" class="nes-btn is-disabled">Desencriptar</button>
+                    <button type="button" class="nes-btn is-warning" onclick="decript()">Desencriptar</button>
                </div>
                
           </div>
